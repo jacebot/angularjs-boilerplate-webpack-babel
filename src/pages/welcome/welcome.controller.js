@@ -1,4 +1,4 @@
-export default class WelcomeController {
+class WelcomeController {
   constructor() {
     this.items = [
       { title: 'Webpack', image: require('./img/what-is-webpack.png') },
@@ -7,3 +7,4 @@ export default class WelcomeController {
     ];
   }
 }
+export default WelcomeController;

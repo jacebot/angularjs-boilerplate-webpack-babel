@@ -17,7 +17,7 @@ import reduxConfig from './reduxConfig';
 import routeConfig from './routeConfig';
 
 // Import components
-import demoModule from './pages/demoModule';
+import welcome from './pages/welcome';
 import sideNav from './containers/side-nav';
 import topNav from './containers/top-nav';
 
@@ -31,7 +31,7 @@ const app = angular
     ngAnimate,
     ngMessages,
 
-    demoModule,
+    welcome,
     sideNav,
     topNav,
   ]);

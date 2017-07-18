@@ -17,7 +17,7 @@ export default function(app) {
 
       .state('index.home', {
         url: '/',
-        template: '<div demo-welcome=""></div>',
+        template: '<welcome></welcome>',
       })
 
   }
