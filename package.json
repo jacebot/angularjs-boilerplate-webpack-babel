@@ -1,5 +1,5 @@
 {
-  "name": "My Cool AngularJS Application",
+  "name": "MyApp",
   "version": "0.1.0",
   "description": "AngularJS project template",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "cover": "rimraf coverage && COVERAGE=1 karma start",
     "lint": "eslint ./src/"
   },
-  "author": "Jace Whitten<jace.hhitten@gmail.com>",
+  "author": "Jace Whitten<jace.whitten@gmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
