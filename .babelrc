@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "latest"
+  ],
+  "plugins": [
+    "angularjs-annotate",
+    "transform-object-rest-spread",
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }]
+  ]
+}
