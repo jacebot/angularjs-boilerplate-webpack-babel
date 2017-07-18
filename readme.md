@@ -1,18 +1,16 @@
 # Modern SPA seed for AngularJS (1.x)
 
-[![Build Status](https://travis-ci.org/zxbodya/angular-webpack-seed.svg?branch=master)](https://travis-ci.org/zxbodya/angular-webpack-seed)
-[![Coverage Status](https://coveralls.io/repos/zxbodya/angular-webpack-seed/badge.svg?branch=master&service=github)](https://coveralls.io/github/zxbodya/angular-webpack-seed?branch=master)
-[![codecov.io](https://codecov.io/github/zxbodya/angular-webpack-seed/coverage.svg?branch=master)](https://codecov.io/github/zxbodya/angular-webpack-seed?branch=master)
+TODO: Add coverage stats some day.
 
 It is quite opinionated, so feel free - to make suggestions to improve it.
 
-##Special Thanks
+## Special Thanks
 
 Just a quick special thanks to the following for motivating me to do this.
-:clap: My self of course :wink: ,
-:clap: [Mario Tacke](https://mariotacke.io) ,
-:clap: [Bogdan Savluk](https://github.com/zxbodya) ,
-:clap: [Fábio Miranda](http://fabiomiranda.me)
+ - :clap: My self of course :wink: ,
+ - :clap: [Mario Tacke](https://mariotacke.io) ,
+ - :clap: [Bogdan Savluk](https://github.com/zxbodya) ,
+ - :clap: [Fábio Miranda](http://fabiomiranda.me)
 
 Includes following:
 
@@ -36,7 +34,7 @@ Requirements:
 
 ### Usage
 
-1. Install dependencies `yarn i`
+1. Install dependencies `yarn install`
 2. Start dev server `yarn dev` open [http://localhost:2992](http://localhost:2992)
 3. Lint your code `yarn run lint`
 4. Run unit tests `yarn run test`
@@ -44,7 +42,7 @@ Requirements:
 
 To analyze your bundle size - Recommend using [Webpack Bundle Analyzer](https://github.com/th0r/webpack-bundle-analyzer)
 
-Currently dev stats for the Webpack console output is minimized in the 'webpack-dev-server.config.js' file. Change it as one see's fit.
+Currently dev stats for the Webpack console output is minimized in the `webpack-dev-server.config.js` file. Change it as one see's fit.
 
 ---
 
