@@ -12,7 +12,8 @@
     "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --colors --port 2992 --inline --content-base public",
     "test": "karma start",
     "cover": "rimraf coverage && COVERAGE=1 karma start",
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "stylelint":"stylelint '**/*.scss'; exit 0"
   },
   "author": "Jace Whitten<jace.whitten@gmail.com>",
   "license": "MIT",
@@ -33,7 +34,10 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "redux-ui-router": "^0.7.2",
-    "simple-line-icons": "^2.4.1"
+    "simple-line-icons": "^2.4.1",
+    "stylelint": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^3.0.1",
+    "stylelint-scss": "^1.5.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.4",

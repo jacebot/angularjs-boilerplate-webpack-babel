@@ -5,7 +5,6 @@ import ngRedux from 'ng-redux';
 import ngReduxUiRouter from 'redux-ui-router';
 import ngAnimate from 'angular-animate';
 import ngMessages from 'angular-messages';
-import jquery from 'jquery';
 import bootstrap from 'angular-ui-bootstrap';
 
 // Import styles
@@ -43,7 +42,7 @@ app.config(['$locationProvider', ($locationProvider) => {
     enabled: true,
     requireBase: false,
   });
-}])
+}]);
 
 // Load config for ui-router
 app.config(routeConfig(app));

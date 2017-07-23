@@ -3,7 +3,6 @@
 class TopNavController {
   constructor () {
     'ngInject';
-
   }
 
   mapState () {
@@ -14,7 +13,7 @@ class TopNavController {
 
   mapDispatch () {
     return {
-    
+
     };
   }
 }

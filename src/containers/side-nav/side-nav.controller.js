@@ -3,7 +3,6 @@
 class SideNavController {
   constructor () {
     'ngInject';
-
   }
 
   mapState () {
