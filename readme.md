@@ -1,4 +1,4 @@
-# Modern SPA seed for AngularJS (1.x)
+# Modern SPA Boilerplate for AngularJS (1.x)
 
 TODO: Add coverage stats some day.
 
