@@ -1,3 +1,17 @@
 {
-  "extends": "stylelint-config-sass-guidelines"
+  "extends": "stylelint-config-sass-guidelines",
+  rules: {
+    "selector-no-qualifying-type": [
+      false,
+      {
+        "ignore": [
+          "attribute",
+          "class"
+        ]
+      }
+    ],
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "scss/dollar-variable-colon-space-after": null
+  }
 }

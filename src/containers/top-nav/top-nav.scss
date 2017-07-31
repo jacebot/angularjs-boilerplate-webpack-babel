@@ -1,0 +1,85 @@
+$text-color: #000;
+$border-color: #000;
+/*scroll effect*/
+.navbar-trans {
+  background-color: transparent;
+  border: 0;
+  transition: all 1s ease;
+}
+/*double row*/
+.navbar-doublerow {
+  flex-direction: column;
+  padding-left: 240px;
+
+  > .navbar {
+    display: block;
+    margin: 0 auto;
+    min-height: 25px;
+    padding: 0;
+  }
+
+  .nav {
+    display: flex;
+    flex: 1;
+    padding: 0;
+  }
+
+  .nav-end {
+    justify-content: flex-end;
+  }
+
+  .dividline {
+    background-color: inherit;
+    margin: 5px 100px;
+    padding-top: 1px;
+  }
+  /*top nav*/
+  .navbar-top > a {
+    font-size: 12px;
+    padding: 10px auto;
+  }
+}
+/*down nav*/
+.navbar-down {
+  .navbar-brand {
+    color: $text-color;
+    flex: 1;
+    float: left;
+    font-size: 32px;
+    padding: 0 auto;
+  }
+
+  li > a {
+    color: $text-color;
+    font-size: 16px;
+    transition: border-bottom 0.2s ease-in , transform 0.2s ease-in-out;
+  }
+
+  li > a:hover {
+    border-bottom: 1px solid $border-color;
+    color: $text-color;
+  }
+
+  .dropdown {
+    color: #000;
+    padding: 5px;
+
+    > a ,
+    > a:hover {
+      border-bottom: 0;
+      color: #000;
+    }
+  }
+}
+
+.navbar-doublerow.navbar-trans.afterscroll {
+  background-color: #fff;
+  top: -50px;
+}
+
+.flex-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,20 +1,16 @@
-// import { reducerAction } from '../../reducers/objectReducer';
+import angular from 'angular';
 
 class TopNavController {
-  constructor () {
+  constructor ($window) {
     'ngInject';
-  }
 
-  mapState () {
-    return {
-
-    };
-  }
-
-  mapDispatch () {
-    return {
-
-    };
+    angular.element($window).bind('scroll', () => {
+      if ($window.pageYOffset > 50) {
+        angular.element(document.getElementsByClassName('navbar-trans')).addClass('afterscroll');
+      } else {
+        angular.element(document.getElementsByClassName('navbar-trans')).removeClass('afterscroll');
+      }
+    });
   }
 }
 export default TopNavController;

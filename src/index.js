@@ -17,6 +17,7 @@ import routeConfig from './routeConfig';
 
 // Import components
 import welcome from './pages/welcome';
+import page2 from './pages/page2';
 import sideNav from './containers/side-nav';
 import topNav from './containers/top-nav';
 
@@ -31,6 +32,7 @@ const app = angular
     ngMessages,
 
     welcome,
+    page2,
     sideNav,
     topNav,
   ]);

@@ -6,7 +6,6 @@ const config = makeWebpackConfig({
   separateStylesheet: true,
   debug: true,
   watch: true,
-  hot: true,
 });
 
 module.exports = config;
