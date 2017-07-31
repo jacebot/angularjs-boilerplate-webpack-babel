@@ -19,6 +19,11 @@ export default function () {
       .state('index.home', {
         url: '/',
         template: '<welcome></welcome>',
+      })
+
+      .state('index.page2', {
+        url: '/page2',
+        template: '<page2></page2>',
       });
   }
 
