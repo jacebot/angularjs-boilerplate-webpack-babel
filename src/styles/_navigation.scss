@@ -1,0 +1,40 @@
+// Sidebar
+
+$sidebar-width:                     235px;
+$sidebar-padding:                   0;
+$sidebar-compact-width:             50px;
+$sidebar-compact-height:            300px;
+$sidebar-color:                     #fff;
+$sidebar-bg:                        #87907b;
+$sidebar-header-bg:                 rgba(0, 0, 0, 0.2);
+$sidebar-footer-bg:                 rgba(0, 0, 0, 0.2);
+$sidebar-borders:                   none;
+$mobile-sidebar-width:              235px;
+
+// Sidebar Navigation
+
+$sidebar-nav-color:                 #fff;
+$sidebar-nav-title-padding-y:       0.95rem;
+$sidebar-nav-title-padding-x:       1rem;
+$sidebar-nav-title-color:           #0a0a0a;
+$sidebar-nav-link-padding-y:        0.75rem;
+$sidebar-nav-link-padding-x:        1rem;
+$sidebar-nav-link-color:            #fff;
+$sidebar-nav-link-bg:               transparent;
+$sidebar-nav-link-icon-color:       #0a0a0a;
+
+$sidebar-nav-link-borders:          0;
+$sidebar-nav-link-hover-color:      #fff;
+$sidebar-nav-link-hover-bg:         darken($sidebar-bg, 5%);
+$sidebar-nav-link-hover-icon-color: #fff !important;
+
+$sidebar-nav-link-hover-borders:    0;
+$sidebar-nav-link-active-color:     #fff;
+$sidebar-nav-link-active-bg:        darken($sidebar-bg, 5%);
+$sidebar-nav-link-active-icon-color: #fff;
+
+$sidebar-nav-link-active-borders:   0;
+
+$sidebar-nav-dropdown-color:        #fff;
+$sidebar-nav-dropdown-bg:           darken($sidebar-bg, 3%);
+$sidebar-nav-dropdown-borders:      0;

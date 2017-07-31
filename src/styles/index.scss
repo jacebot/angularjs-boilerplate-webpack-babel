@@ -1,10 +1,18 @@
 @import './imports';
 
+
 body {
-  background-color: #eefaee;
+  background-color: #87907b;
+  height: 1900px; // Faux height - REMOVE THIS
   padding: 10px;
 }
 
 h1 {
   font-size: 3em;
+}
+
+
+.content-container {
+  padding-left: 240px;
+  padding-top: 100px;
 }
