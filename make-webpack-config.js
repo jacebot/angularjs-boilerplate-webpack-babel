@@ -20,9 +20,10 @@ module.exports = function (options) {
         },
       },
     },
-    { test: /\.html$/, use: ['html-loader'] },
-
-    // font awesome
+    { test: /\.html$/,
+      use: ['html-loader?attrs[]=source:src&attrs[]=video:src&attrs[]=video:poster&attrs[]=img:src']
+    },
+    // fonts
     {
       test: /\.woff2?(\?v=\d+\.\d+\.\d+|\?.*)?$/,
       use: {
@@ -57,6 +58,36 @@ module.exports = function (options) {
         },
       },
     },
+    {
+      test: /\.mp4$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+          mimetype: 'application/video+mp4',
+        },
+      },
+    },
+    {
+      test: /\.ogv$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+          mimetype: 'application/video+ogv',
+        },
+      },
+    },
+    {
+      test: /\.webm$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+          mimetype: 'application/video+webm',
+        },
+      },
+    }
   ];
   const postCssLoader = {
     loader: 'postcss-loader',
@@ -138,7 +169,13 @@ module.exports = function (options) {
     /node_modules[\\/]angular[\\/]/,
   ];
   const plugins = [
-    new webpack.optimize.ModuleConcatenationPlugin(),
+    function concat () {
+      if (options.concat) {
+        const concatPlugins = new webpack.optimize.ModuleConcatenationPlugin();
+
+        return concatPlugins;
+      }
+    },
     function statsPlugin () {
       this.plugin('done', (stats) => {
         const jsonStats = stats.toJson({
@@ -158,10 +195,6 @@ module.exports = function (options) {
 
   const alias = {};
   const externals = [];
-
-  if (options.concat) {
-    new webpack.optimize.ModuleConcatenationPlugin(plugins);
-  }
 
   if (options.commonsChunk && !options.cover) {
     plugins.push(
