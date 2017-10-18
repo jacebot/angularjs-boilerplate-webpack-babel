@@ -159,12 +159,16 @@ module.exports = function (options) {
   const alias = {};
   const externals = [];
 
+  if (options.concat) {
+    new webpack.optimize.ModuleConcatenationPlugin(plugins);
+  }
+
   if (options.commonsChunk && !options.cover) {
     plugins.push(
-      new webpack.optimize.CommonsChunkPlugin(
-        'commons',
-        `commons.js${(options.longTermCaching ? '?[chunkhash]' : '')}`
-      )
+      new webpack.optimize.CommonsChunkPlugin({
+        name: 'commons',
+        filename: `commons.js${(options.longTermCaching ? '?[chunkhash]' : '')}`
+      })
     );
   }
 
