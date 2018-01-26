@@ -39,7 +39,7 @@ const app = angular
 
 // Enable HTML5 mode for routes
 app.config(['$locationProvider', ($locationProvider) => {
-  $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('#');
   $locationProvider.html5Mode({
     enabled: true,
     requireBase: false,
