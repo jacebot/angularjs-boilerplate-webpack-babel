@@ -1,6 +1,6 @@
 // Import third party libraries
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 import ngRedux from 'ng-redux';
 import ngReduxUiRouter from 'redux-ui-router';
 import ngAnimate from 'angular-animate';
