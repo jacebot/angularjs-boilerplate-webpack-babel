@@ -21,6 +21,7 @@ Includes following:
  - karma test runner configuration with code coverage reports
  - Bootstrap 4, because... you know why.
  - Angular-UI-Bootstrap, sure, why not add one more commonly used plugin too.
+ - (TESTING) GitHub Actions
 
 Requirements:
 
