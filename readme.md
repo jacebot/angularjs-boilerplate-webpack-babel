@@ -1,4 +1,5 @@
-# Modern SPA Boilerplate for AngularJS (1.x)
+# No longer supported. Please consider a newer framework such as Vue or React.
+## Modern SPA Boilerplate for AngularJS (1.x)
 
 TODO: Add coverage stats some day.
 
